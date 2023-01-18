@@ -1,5 +1,79 @@
 body {
     margin : 0;
     padding : 0;
-    
+
+}
+
+.slide {
+    position : relative;
+    margin:auto;
+}
+
+.previous {
+   transform: scaleX(-1);
+   position: absolute;
+   z-index:10;
+   width : 30px;
+   height : 30px;
+   right : 100;
+   top : 50%;
+   margin-left : 30px;
+   background-color : white;
+   border-radius: 50%;
+   padding:10px;
+   cursor : pointer;
+   opacity: 0.5;
+   transition: 0.6s ease;
+}
+
+.previous:hover {
+    opacity : 1;
+}
+
+.next {
+   position: absolute;
+   z-index:10;
+   width : 30px;
+   height : 30px;
+   right : 0;
+   top : 50%;
+   margin-right : 30px;
+   background-color : white;
+   border-radius: 50%;
+   padding:10px;
+   cursor : pointer;
+   opacity: 0.5;
+   transition: 0.6s ease;
+   
+}
+
+.next:hover {
+    opacity: 1;
+}
+
+.image-slide {
+    width:100%;
+    height:700px;
+}
+
+.dot-section{
+    text-align : center;
+}
+
+.dot {
+    background-color : lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+}
+
+.dot:hover {
+    background-color : #ed8037a5;
+}
+
+.active, .dot:hover {
+    background-color: #ed8037;
 }
