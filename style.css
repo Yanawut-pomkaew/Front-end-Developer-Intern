@@ -7,6 +7,7 @@ body {
 .slide {
     position : relative;
     margin:auto;
+    
 }
 
 .previous {
@@ -53,11 +54,14 @@ body {
 
 .image-slide {
     width:100%;
-    height:700px;
+    height: auto;
 }
 
 .dot-section{
-    text-align : center;
+    margin-left: 48%;
+    margin-top:20px;
+    margin-bottom:200px;
+    
 }
 
 .dot {
@@ -72,8 +76,9 @@ body {
 
 .dot:hover {
     background-color : #ed8037a5;
+    transition : 0.5s;
 }
 
-.active, .dot:hover {
+.active , .dot:active {
     background-color: #ed8037;
 }
