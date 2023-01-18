@@ -13,10 +13,12 @@ function display(n) {
     let slide = document.getElementsByClassName("slide");
     let dot = document.getElementsByClassName("dot");
             
+    // กรณีที่กด next ไปเรื่อย ๆ เมื่อถึงรูปสุดท้าย รูปที่แสดงต่อจากนี้จะเป็นรูปแรก
     if (n > slide.length) {
         image = 1
     }    
 
+    // กรณีที่กด previous ไปเรื่อย ๆ เมื่อถึงรูปแรก รูปที่แสดงต่อจากนี้จะเป็นรูปสุดท้าย
     if (n < 1) {
         image = slide.length
     }
